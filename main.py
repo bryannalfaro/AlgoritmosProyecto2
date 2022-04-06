@@ -77,3 +77,40 @@ for i in secuencia:
     print('Configuracion con MTF: ',configuracion_after,'\n')
 print('Costo total: ', costo_total,'\n')
 print('Configuracion final: ',configuracion_after,'\n')
+
+configuracion = [0,1,2,3,4]
+secuencia = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ]
+
+
+configuracion_after = configuracion
+costo_total = 0
+print('\n PARTE E \n')
+for i in secuencia:
+    costo = 0
+
+    print('Configuracion inicial', configuracion_after)
+    print('Se esta solicitando: ',i)
+    configuracion_after, costo = mtf(configuracion_after,i)
+    print('Costo: ', costo)
+    costo_total += costo
+    print('Configuracion con MTF: ',configuracion_after,'\n')
+print('Costo total: ', costo_total,'\n')
+print('Configuracion final: ',configuracion_after,'\n')
+
+configuracion = [0,1,2,3,4]
+secuencia = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+
+
+configuracion_after = configuracion
+costo_total = 0
+for i in secuencia:
+    costo = 0
+
+    print('Configuracion inicial', configuracion_after)
+    print('Se esta solicitando: ',i)
+    configuracion_after, costo = mtf(configuracion_after,i)
+    print('Costo: ', costo)
+    costo_total += costo
+    print('Configuracion con MTF: ',configuracion_after,'\n')
+print('Costo total: ', costo_total,'\n')
+print('Configuracion final: ',configuracion_after,'\n')
