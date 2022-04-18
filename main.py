@@ -147,7 +147,7 @@ for i in secuencia3:
     index+=1
     print('Costo: ', costo)
     costo_total += costo
-    print('Configuracion con MTF: ',configuracion_after,'\n')
+    print('Configuracion con IMTF: ',configuracion_after,'\n')
 print('Costo total: ', costo_total,'\n')
 print('Configuracion final: ',configuracion_after,'\n')
 
@@ -169,6 +169,6 @@ for i in secuencia:
     index+=1
     print('Costo: ', costo)
     costo_total += costo
-    print('Configuracion con MTF: ',configuracion_after,'\n')
+    print('Configuracion con IMTF: ',configuracion_after,'\n')
 print('Costo total: ', costo_total,'\n')
 print('Configuracion final: ',configuracion_after,'\n')
