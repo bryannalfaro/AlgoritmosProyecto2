@@ -128,7 +128,6 @@ print('Configuracion final: ',configuracion_after,'\n')
 
 print('\n')
 configuracion = [0,1,2,3,4]
-secuencia = []
 secuencia = [4,3,2,1,0,4,3,2,1,0,4,3,2,1,0,4,3,2,1,0] #worst
 secuencia2 = [4,3,3,3,2]
 secuencia3 = [] #best
@@ -152,9 +151,7 @@ print('Costo total: ', costo_total,'\n')
 print('Configuracion final: ',configuracion_after,'\n')
 
 configuracion = [0,1,2,3,4]
-secuencia = []
 secuencia = [4,3,2,1,0,4,3,2,1,0,4,3,2,1,0,4,3,2,1,0] #worst
-
 
 configuracion_after = configuracion
 costo_total = 0

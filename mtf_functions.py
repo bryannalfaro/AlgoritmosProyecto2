@@ -1,3 +1,5 @@
+# Recibe la configuracion y el valor a buscar
+# Retorna la configuracion con el valor en la posicion 0 y el costo
 def mtf(config, value):
     contador = 0
     contador_externo = 0
@@ -10,6 +12,9 @@ def mtf(config, value):
             break
     return config, contador
 
+# Improved Move To Front
+# Recibe la configuracion, el valor a buscar, la secuencia completa de solicitudes y el indice de la solicitud actual
+# Retorna la configuracion con el valor en la posicion 0 y el costo
 def imtf(config, value,solicitud,index):
     contador = 0
     contador_externo = 0
