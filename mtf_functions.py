@@ -18,20 +18,23 @@ def mtf(config, value):
 def imtf(config, value,solicitud,index):
     contador = 0
     contador_externo = 0
-    cont1 = 0
+    found = False
     arr = []
     for i in config:
         contador_externo+=1
         if i == value:
             contador =contador_externo
-            for i in range(contador-2):
-                arr.append(solicitud[(i+solicitud[index]-1)%len(solicitud)])
+            for j in range(contador-2):
+                if index+j+1 < len(solicitud):
+                    arr.append(solicitud[(index+j+1)])
             if len(arr)!=0:
-                for i in arr:
-                    if i == value:
-                        cont1 +=1
-                if cont1 == (contador-2):
                     new = config.pop(contador_externo-1)
-                    config.insert(0,new)
-                break
+                for k in arr:
+                    if k == value:
+                        new = config.pop(contador_externo-1)
+                        config.insert(0,new)
+                        found = True
+                        break
+        if found:
+            return config, contador
     return config, contador
