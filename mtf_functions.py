@@ -28,7 +28,6 @@ def imtf(config, value,solicitud,index):
                 if index+j+1 < len(solicitud):
                     arr.append(solicitud[(index+j+1)])
             if len(arr)!=0:
-                    new = config.pop(contador_externo-1)
                 for k in arr:
                     if k == value:
                         new = config.pop(contador_externo-1)
